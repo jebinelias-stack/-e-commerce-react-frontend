@@ -22,19 +22,19 @@ function Adminproducts() {
 
   return (
     <div className="admin-products-page">
-      <nav className="navbar">
-        <h2>ShopHub Admin</h2>
+     <nav className="admin-navbar">
+  <h2>ShopHub Admin</h2>
 
-        <ul className="nav-links">
-          <Link to="/">
-            <button className="btn1">Home</button>
-          </Link>
+  <ul className="admin-nav-links">
+    <Link to="/">
+      <button className="btn1">Home</button>
+    </Link>
 
-          <Link to="/admin">
-            <button className="btn1">AddProduct</button>
-          </Link>
-        </ul>
-      </nav>
+    <Link to="/admin">
+      <button className="btn1">AddProduct</button>
+    </Link>
+  </ul>
+</nav>
 
       <h1 className="page-title">Manage Products</h1>
 
