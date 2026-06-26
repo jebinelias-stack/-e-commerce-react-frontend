@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router'
+import React, { useContext,  useState } from 'react'
+import { Link, useNavigate } from 'react-router'
 import { signupInfo } from '../api/userApi'
 import '../CSS/Signup.css'
+import { Storecontext } from './Store'
 
 function Signup() {
+
+  let {dispatch} =useContext(Storecontext)
+  
+  const navigate = useNavigate()
   
   const[message,setMessage] = useState()
 
@@ -22,6 +27,10 @@ function Signup() {
    let returnValue = await signupInfo(data)
    if(returnValue){
     setMessage("SignUp Success")
+
+    setTimeout(()=>{
+      navigate('/')
+    },[1000])
    }
   }
 

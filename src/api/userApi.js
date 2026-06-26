@@ -1,7 +1,7 @@
 import axios from "axios"
 import { data } from "react-router"
 
-async function signupInfo (data) {
+async function signupInfo (data,dispatch) {
     try{
     let a = await axios.post("https://e-commerce-node-backend-1vo8.onrender.com/api/signup",data)
     return a.data
