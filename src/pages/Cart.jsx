@@ -43,14 +43,14 @@ function Cart() {
 
   return (
   <>
-    <nav className="navbar">
-      <div className="logo">ShopHub</div>
+    <nav className="cart-navbar">
+  <div className="logo">ShopHub</div>
 
-      <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/orders">My Orders</Link>
-      </div>
-    </nav>
+  <div className="cart-nav-links">
+    <Link to="/">Home</Link>
+    <Link to="/orders">My Orders</Link>
+  </div>
+</nav>
 
     <div className="cart-container">
       <h1 className="cart-title">🛒 My Cart</h1>
