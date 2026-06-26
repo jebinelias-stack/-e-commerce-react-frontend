@@ -1,53 +1,56 @@
-.admin-container{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#f4f4f4;
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 20px;
 }
 
-.admin-card{
-  width:450px;
-  background:white;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+.admin-card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.admin-card h1{
-  text-align:center;
-  margin-bottom:20px;
+.admin-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.admin-card input{
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border:1px solid #ddd;
-  border-radius:8px;
-  box-sizing:border-box;
+.admin-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-.admin-card button{
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:8px;
-  background:#2563eb;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
+.admin-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.admin-card button:hover{
-  background:#1d4ed8;
+.admin-card button:hover {
+  background: #1d4ed8;
 }
 
-.admin-card a{
-  display:block;
-  text-align:center;
-  margin-top:15px;
-  text-decoration:none;
+.admin-card a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
 }
 
 .success-message {
@@ -72,4 +75,48 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+  .admin-container {
+    padding: 20px;
+  }
+
+  .admin-card {
+    max-width: 400px;
+    padding: 25px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .admin-container {
+    padding: 15px;
+  }
+
+  .admin-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .admin-card h1 {
+    font-size: 26px;
+  }
+
+  .admin-card input {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .admin-card button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
 }
