@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import "../CSS/Home.css";
-import { Storecontext } from "./Store";
-import { Link } from "react-router";
-import axios from "axios";
-import { getProducts } from "../api/userApi";
+import React, { useContext, useEffect, useState } from "react"
+import "../CSS/Home.css"
+import { Storecontext } from "./Store"
+import { Link } from "react-router"
+import { getProducts } from "../api/userApi"
 
 
 function HomePage() {
