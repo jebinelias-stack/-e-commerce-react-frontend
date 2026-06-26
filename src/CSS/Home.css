@@ -114,13 +114,15 @@ body {
 }
 
 .category{
-    flex-wrap:wrap;
-    justify-content:center;
-    padding:15px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:6px;
+    padding:10px;
 }
 
 .category button{
-    padding:8px 16px;
+    padding:8px 4px;
+    font-size:12px;
 }
 
 .home1{
