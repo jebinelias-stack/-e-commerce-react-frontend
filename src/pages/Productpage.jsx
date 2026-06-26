@@ -44,16 +44,14 @@ function Productpage() {
 
  return (
   <div>
-    <nav className="navbar">
+    <nav className="product-navbar">
       <h2>ShopHub</h2>
-
-      <ul className="nav-links">
+      <ul className="product-nav-links">
         <Link to="/cart">
-          <button className="btn1">Cart</button>
+        <button className="btn1">Cart</button>
         </Link>
       </ul>
     </nav>
-
     <div className="product-container">
 
       <div className="product-image-section">
